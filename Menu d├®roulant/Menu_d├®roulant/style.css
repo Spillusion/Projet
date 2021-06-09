@@ -1,0 +1,174 @@
+/*Style pour toute la page*/
+*{
+    box-sizing: border-box;
+    
+}
+/*Styles généraux*/
+body{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+    color:rgb(51, 51, 51);
+    margin: 0;
+    background-color: lightcoral
+    ;
+}
+
+/*Styles des hyperliens*/
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    border:  1px dashed rgb(128, 180, 240);
+}
+
+header{
+    position: -webkit-sticky;
+    
+    top: 0;
+    background-color: lightcoral;
+}
+
+/*Style de la navigation*/
+nav{
+    
+    border-bottom: 3px solid #34c6dd;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+
+nav a{
+    color: #34c6dd;
+    font-size:1.4rem;
+}
+
+/*Style du menu dérourant*/
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+
+
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align:justify;
+    
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+    padding-top: 0%;   
+    margin-right: 160px; 
+    background-color:lightcoral;    
+}
+
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+    border: 2px solid lightskyblue;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color: blue;
+    font-size:1.4rem;
+    
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+    
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+/*tyle des niveaux 1*/
+h1{
+    color: orange;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+}
+/*tyle des niveaux 2*/
+h2{
+    color: lightslategray;
+    font-style: italic;
+    text-decoration: underline;
+}
+/*tyle des niveaux 3*/
+h3{
+    text-align: left;
+    color: yellow;
+}
+
+/*Styles du main*/
+main{
+    width: 90%;
+    max-width: 1200px;
+    /*centre au milieu de la page*/
+    margin: 0 auto; 
+}
+
+/*Style des logos*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  /*Style pour les couleur du logo de facebook*/
+  .facebook {
+    background: #3B5998;
+    color: white;
+  }
+  /*Style pour les couleur du logo de twitter*/
+  .twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  /*Style pour les couleur du logo d'instagram*/
+  .instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+  }
+    
+  .content {
+    margin-left: 75px;
+    font-size: 30px;
+  }
+  
+  .btn_top{
+      padding: 5px; 
+      border: 1px solid rgb(0, 0, 0); 
+      border-radius: 30em;
+  }
+
+div {
+    text-align:center;
+}
+
